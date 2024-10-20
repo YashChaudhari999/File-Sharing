@@ -39,4 +39,65 @@ To run the project locally, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/YashChaudhari999/File-Sharing.git
+   git clone https://github.com/YashChaudhari999/FileShare.git
+   
+2. **Navigate to the project directory**:
+   ```bash
+   cd FileShare
+   
+3. **Install dependencies (for the backend)**:
+   ```bash
+   npm install express multer bcrypt mysql2 cors body-parser jsonwebtoken
+   
+4. **Set up the database**:
+-Create a MySQL database and configure your database connection settings in the backend code
+   ```bash
+   CREATE DATABASE fileshare;
+   USE fileshare;
+   
+   -- User Tabl
+   CREATE  TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL, -- Store hashed passwords
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+   );
+
+   -- Uploads Table For Logged In Users
+   CREATE TABLE uploads_user (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,  -- Reference to users table
+    file_name VARCHAR(255) NOT NULL,
+    file_data LONGBLOB NOT NULL,
+    unique_code VARCHAR(100) NOT NULL,
+    upload_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+   );
+
+   -- Uploads Table Who are not logged In
+   CREATE TABLE uploads (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    file_name VARCHAR(255) NOT NULL,
+    file_data LONGBLOB NOT NULL,
+    unique_code VARCHAR(100) NOT NULL,
+    upload_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+   );
+
+5. **Install dependencies (for the backend)**:
+   ```bash
+   node app.js
+   
+6. Open your browser and go to
+     ```bash
+   http://localhost:3000
+(or whichever port your server is running on).
+
+## Deployment
+**Frontend Deployment**
+-The frontend is hosted on GitHub Pages. To access the live version, visit:
+
+https://YashChaudhari999/FileShare
+
+Backend Deployment
+The backend is deployed on Render (or any chosen service). Make sure to update your frontend code to point to the correct backend API URL.
