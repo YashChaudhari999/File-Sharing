@@ -102,12 +102,12 @@ https://github.com/YashChaudhari999/FileShare
 **Backend Deployment**
 -The backend is deployed on Render (or any chosen service). Make sure to update your frontend code to point to the correct backend API URL.
 
-##Usage
+## Usage
 
 -1.Navigate to the homepage.
 -2.Use the navigation links to upload or download files.
 -3.Follow the prompts to complete file operations.
 
-##License
+## License
 
 -This project is licensed under the MIT License. See the LICENSE file for more details.
