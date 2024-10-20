@@ -104,10 +104,10 @@ https://github.com/YashChaudhari999/FileShare
 
 ## Usage
 
--1.Navigate to the homepage.
--2.Use the navigation links to upload or download files.
--3.Follow the prompts to complete file operations.
+1.Navigate to the homepage.
+2.Use the navigation links to upload or download files.
+3.Follow the prompts to complete file operations.
 
 ## License
 
--This project is licensed under the MIT License. See the LICENSE file for more details.
+-This project is licensed under the MIT License(#License). See the LICENSE file for more details.
