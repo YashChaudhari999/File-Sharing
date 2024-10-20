@@ -110,4 +110,5 @@ https://github.com/YashChaudhari999/FileShare
 
 ## License
 
--This project is licensed under the MIT License(#License). See the LICENSE file for more details.
+-This project is licensed under the MIT License. See the LICENSE file for more details.
+
