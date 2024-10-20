@@ -9,7 +9,6 @@ FileShare is a web application that allows users to upload and download files se
 - [Getting Started](#getting-started)
 - [Deployment](#deployment)
 - [Usage](#usage)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Features
@@ -94,10 +93,21 @@ To run the project locally, follow these steps:
 (or whichever port your server is running on).
 
 ## Deployment
+
 **Frontend Deployment**
 -The frontend is hosted on GitHub Pages. To access the live version, visit:
 
-https://YashChaudhari999/FileShare
+https://github.com/YashChaudhari999/FileShare
 
-Backend Deployment
-The backend is deployed on Render (or any chosen service). Make sure to update your frontend code to point to the correct backend API URL.
+**Backend Deployment**
+-The backend is deployed on Render (or any chosen service). Make sure to update your frontend code to point to the correct backend API URL.
+
+##Usage
+
+-1.Navigate to the homepage.
+-2.Use the navigation links to upload or download files.
+-3.Follow the prompts to complete file operations.
+
+##License
+
+-This project is licensed under the MIT License. See the LICENSE file for more details.
